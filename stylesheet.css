@@ -1,0 +1,256 @@
+/* hondentrimsalon css */
+
+:root {
+    --primarycolor: rgba(229,72,97);
+    --secondarycolor: black;
+    --footercolor: rgb(255, 255, 102);
+    --shadow: 0 1px 5px #777;
+    --thickshadow:2px 2px 8px #000;
+    --thirdcolor: #ff6781;
+}
+
+.wrapper {
+    padding:40px 70px 60px 70px;
+}
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:var(--secondarycolor);
+    background:#ffb6c1;
+    line-height: 1.4rem;
+    font-size: 1.1rem;
+}
+
+hr{ 
+    height: 1px;
+    color: white;
+    background-color: white;
+    border: none;
+  }
+
+body {
+    margin:0;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: 'Bad Script';
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Alex Brush';
+    text-align:center;
+}
+
+.header {
+    background-color: var(--primarycolor);
+    border-bottom: 0.5px solid rgba(229,72,97);
+}
+.logo {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcome-text {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.text-center{
+    color:white;
+    background-color:
+}
+
+.text-center p{
+    color:white;
+}
+
+.trims {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:repeat(5,1fr);
+    grid-template-areas: 
+    "trimbox1 trimbox2 trimbox3 trimbox4 trimbox5 ";
+    text-align: center;
+    line-height: 2rem;
+}
+
+.trimbox1 {
+    grid-area: trimbox1;
+    box-shadow: var(--thickshadow);
+    padding:10px;
+    background-image: url("img/1.jpg");
+    background-size: trimbox1;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background:#ffffff; */
+}
+.trimbox2 {
+    grid-area: trimbox2;
+    box-shadow: var(--thickshadow);
+    padding:10px;
+    background-image: url("img/2.jpg");
+    background-size: trimbox2;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background:#ffffff; */
+}
+.trimbox3 {
+    grid-area: trimbox3;
+    box-shadow: var(--thickshadow);
+    padding:10px;
+    background-size: trimbox3;
+    background-repeat: no-repeat;
+    background-image: url("img/3.jpg");
+    background-position: center;
+    /* background:#ffffff; */
+}
+.trimbox4 {
+    grid-area: trimbox4;
+    box-shadow: var(--thickshadow);
+    padding:10px;
+    background-image: url("img/4.jpg");
+    background-size: trimbox4;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background:#ffffff; */
+}
+.trimbox5 {
+    box-shadow: var(--thickshadow);
+    grid-area: trimbox5;
+    padding:10px;
+    background-image: url("img/5.jpg");
+    background-size: trimbox5;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background:#ffffff; */
+}
+
+/* Before and after section */
+.BA {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    "BA1 BA1 BA1 BA1img"
+    "BA2img BA2 BA2 BA2"
+    "BA3 BA3 BA3 BA3img"
+    "BA4img BA4 BA4 BA4";
+}
+
+.BA1 {
+    grid-area: BA1;
+    padding-top:40px;
+}
+.BA2 {
+    grid-area: BA2;
+    padding-top:40px;
+}
+.BA3 {
+    grid-area: BA3;
+    padding-top:40px;
+}
+.BA4 {
+    grid-area: BA4;
+    padding-top:40px;
+}
+
+.BA1img {
+    grid-area: BA1img;
+}
+.BA2img {
+    grid-area: BA2img;
+}
+.BA3img {
+    grid-area: BA3img;
+}
+.BA4img {
+    grid-area: BA4img;
+}
+
+.borderimg {
+    box-shadow:var(--shadow);
+}
+
+/* Footer section */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas: 
+    "address contact . . .";
+    background-color: var(--footercolor);
+    min-height: 200px;
+    padding-left: 35px;
+    color:#000000;
+    border-top: 0.5px solid rgb(255, 255, 102);;
+}
+
+.footeraddress {
+    grid-area: address;
+    list-style-type: none;
+}
+
+.footercontact {
+    grid-area: contact;
+    list-style-type: none;
+}
+
+/* price section */
+.price {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "smalltrim normaltrim specialtrim";
+    grid-gap: 50px;
+    text-align:center;
+    padding-top: 50px;
+}
+
+.smalltrim {
+    grid-area: smalltrim;
+    background-color: white;
+    box-shadow: var(--shadow);
+    padding-top: 15px;
+}
+.fulltrim {
+    grid-area: normaltrim;
+    background-color: white;
+    box-shadow: var(--shadow);
+    padding-top: 15px;
+}
+.specialtrim {
+    grid-area: specialtrim;
+    background-color: white;
+    box-shadow: var(--shadow);
+    padding-top: 15px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  }
+  
+  button[type=submit] {
+    background-color: rgb(229, 72, 97);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type=submit]:hover {
+    background-color: #ffc0cb;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: rgb(255, 255, 102);
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
